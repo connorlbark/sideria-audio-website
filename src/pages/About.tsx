@@ -1,11 +1,11 @@
-import { ThemedMarkdown } from "../components/ThemedMarkdown"
+import Markdown from "react-markdown"
 
 const content = `
 about 
 `
 
 export const About = () => {
-    return <ThemedMarkdown>
+    return <Markdown>
         {content}
-    </ThemedMarkdown>
+    </Markdown>
 }
