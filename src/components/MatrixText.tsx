@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
@@ -77,12 +78,14 @@ export const MatrixText = ({
     text,
     speed = 1,
     glitchChance = 0.007,
-    className
+    className,
+    linkTo
 }: {
     text: string,
     speed?: number,
     glitchChance?: number,
-    className?: string
+    className?: string,
+    linkTo?: string
 }) => {
 
   const length = text.length
@@ -110,6 +113,12 @@ export const MatrixText = ({
   
   }, [initialized, text, length, currentCharacters, speed]);
 
+
+  if (linkTo) {
+    return <Link className={className} to={linkTo}>
+        {currentCharacters?.join('')}
+    </Link>
+  }
   return <span className={className}>
         {currentCharacters?.join('')}
     </span>
