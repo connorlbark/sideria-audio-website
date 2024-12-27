@@ -1,4 +1,11 @@
-# React + TypeScript + Vite
+# Sideria DSP Website
+
+Website for people to download my finished plugins with interactive demos and other goodies. Still WIP.
+
+Hosted at [sideriadsp.com](https://sideriadsp.com).
+
+
+<!-- # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -47,4 +54,4 @@ export default tseslint.config({
     ...react.configs['jsx-runtime'].rules,
   },
 })
-```
+``` -->
